@@ -17,5 +17,5 @@ when_class VARCHAR(255) NOT NULL
 CREATE TABLE booking_infos(
 id SERIAL8 PRIMARY KEY,
 exercise_class_id INT8 REFERENCES exercise_classes(id),
-memeber_id INT8 REFERENCES members(id)
+member_id INT8 REFERENCES members(id)
 );

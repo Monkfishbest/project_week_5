@@ -49,6 +49,14 @@ class ExerciseClass
       SqlRunner.run( sql, values)
     end
 
+    # ~ This method calls all the members that a class currently has enrolled ~
+      def members
+        sql = "SELECT members.* FROM members INNER JOIN booking_infos ON members.id = booking_infos.member_id WHERE exercise_class_id = $1;"
+        values = [@id]
+        results = SqlRunner.run(sql, values)
+        return results.map {|member| Member.new(member)}
+      end
+
    # ~Class Methods~
 
     def self.all
