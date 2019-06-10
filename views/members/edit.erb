@@ -1,0 +1,10 @@
+<form action="/members/<%=@member.id%>/edit" method="post">
+
+  <label for="first-name">First Name</label>
+  <input type="text" value="<%=@member.first_name%>" name="first_name" id="first-name">
+
+  <label for="last-name">Last name</label>
+  <input type="text" value="<%= @member.last_name%>" name="last_name" id="last-name">
+
+  <input type="submit" value="Edit gym Member details">
+</form>
