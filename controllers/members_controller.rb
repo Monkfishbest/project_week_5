@@ -20,12 +20,6 @@ post '/members/new' do
   erb(:"members/new")
 end
 
-# # NEW
-# get '/members/confirm-new-member' do
-#   @member = Member.new(params)
-#   erb(:"members/new")
-# end
-
 # EDIT
 get '/members/:id/edit' do
   @member = Member.find(params[:id].to_i)
