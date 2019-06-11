@@ -56,7 +56,6 @@ class ExerciseClass
         results = SqlRunner.run(sql, values)
         return results.map {|member| Member.new(member)}
       end
-
    # ~Class Methods~
 
     def self.all

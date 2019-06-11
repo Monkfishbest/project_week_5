@@ -1,0 +1,6 @@
+<h1>List of all gym classes</h1>
+<%= @classes.each do |class| %>
+<p>Class name: <%= class.class_name %> </p>
+<p>Class time and date: <%= class.when_class %> </p>
+<p><a href="/classes/<%= class.id %>/edit">Edit class info</a></p>
+<p><a href="/members/<%= class.id %>/delete">Delete class</a></p>

@@ -1,0 +1,9 @@
+<form class="/classes/<%=@class.id  %>/edit " method="post">
+  <label for="class-name">Class Name</label>
+  <input type="text" name="class_name" value="<%= @class.class_name %> ">
+
+  <label for="when-class">When is the class</label>
+  <input type="text" name="when_class" value=" <%= @class.when_class  %> " id="when-class">
+  <input type="submit" value="Edit class details">
+
+</form>
