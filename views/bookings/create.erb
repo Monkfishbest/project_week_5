@@ -12,7 +12,7 @@
 
   <label>
     Select a class:
-    <select name="member_id">
+    <select name="exercise_class_id">
       <% @classes.each do |gym_class|  %>
       <option value="<%= gym_class.id %>"><%= gym_class.class_name %></option>
       <% end %>
