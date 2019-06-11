@@ -9,12 +9,6 @@ get '/members' do
   erb(:"members/index")
 end
 
-# NEW
-get '/members/confirm-new-member' do
-  @member = Member.new(params)
-  erb(:"members/new")
-end
-
 # CREATE
 get '/members/new' do
   erb(:"members/create")
@@ -23,8 +17,14 @@ end
 post '/members/new' do
   @member = Member.new(params)
   @member.save
-  redirect to('/members/confirm-new-member')
+  erb(:"members/new")
 end
+
+# # NEW
+# get '/members/confirm-new-member' do
+#   @member = Member.new(params)
+#   erb(:"members/new")
+# end
 
 # EDIT
 get '/members/:id/edit' do
