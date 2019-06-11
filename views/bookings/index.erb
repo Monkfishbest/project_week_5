@@ -1,9 +1,9 @@
 <h1> Booking information </h1>
 
 <ul>
-  <% @bookings.each |booking| %>
+  <% @bookings.each do |booking| %>
   <li>
-    <p><%= booking.member.full_name %> is booked on <%= booking.gym_class.class_name %> which is at <%= booking.gym_class.when_class %> </p>
+    <p><%= booking.member.first_name %> <%= booking.member.last_name %> is booked on <%= booking.gym_class.class_name %> which is at <%= booking.gym_class.when_class %> </p>
     <p>
       <form  action="/booking-info/<%= booking.id %>/delete" method="post">
         <input type="submit" value="Delete booking">

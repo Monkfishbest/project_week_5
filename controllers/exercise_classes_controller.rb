@@ -17,7 +17,7 @@ end
 post '/classes/new' do
   @class = ExerciseClass.new(params)
   @class.save
-  erb(:"class/new")
+  erb(:"classes/new")
 end
 
 # EDIT

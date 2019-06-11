@@ -22,3 +22,8 @@ post '/booking-info/new' do
   @booking.save
   redirect to("/booking-info")
 end
+
+post '/booking-info/:id/delete' do
+  BookingInfo.remove(params[:id])
+  redirect to("booking-info")
+end

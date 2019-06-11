@@ -30,6 +30,7 @@ class BookingInfo
       @id = results.first['id'].to_i
     end
 
+# This method is redudent? possibily.
     def delete
       sql = "DELETE FROM booking_infos WHERE id = $1"
       values = [@id]
@@ -69,6 +70,12 @@ class BookingInfo
       sql = "SELECT * FROM booking_infos"
       results = SqlRunner.run(sql)
       return results.map{ |booking_info_hash| BookingInfo.new(booking_info_hash)}
+    end
+
+    def self.remove(id)
+      sql = "DELETE FROM booking_infos WHERE id = $1"
+      values = [id]
+      SqlRunner.run(sql, values)
     end
 
     def self.find(id)
