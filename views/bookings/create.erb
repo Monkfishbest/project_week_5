@@ -1,0 +1,24 @@
+<h1>Book a gym member onto the system!</h1>
+
+<form action="/booking-info/new" method="post">
+  <label>
+    Select a gym member:
+    <select name="member_id">
+      <% @members.each do |member|  %>
+      <option value="<%= member.id %>"><%= member.first_name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <label>
+    Select a class:
+    <select name="member_id">
+      <% @classes.each do |gym_class|  %>
+      <option value="<%= gym_class.id %>"><%= gym_class.class_name %></option>
+      <% end %>
+    </select>
+
+  </label>
+
+  <input type="submit" value="Add gym member to class!">
+</form>

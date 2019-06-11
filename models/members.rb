@@ -12,9 +12,13 @@ class Member
 
   # ~Thease methods allow for full C-R-U-D functionailty~
 
+  def full_name
+    return "#{@first_name} #{@last_name}"
+  end
+
   # ~Instance Methods~
 
-  def save()
+  def save
     sql = "INSERT INTO members
     (
       first_name,
@@ -65,7 +69,7 @@ class Member
       results = SqlRunner.run(sql)
       return results.map{ |member_hash| Member.new(member_hash)}
     end
-    
+
     def self.find(id)
       sql = "SELECT * FROM members WHERE id = $1"
       values = [id]
