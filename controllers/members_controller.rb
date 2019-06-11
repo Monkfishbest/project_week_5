@@ -6,25 +6,30 @@ also_reload( '../models/*' )
 # INDEX
 get '/members' do
   @members = Member.all
-  erb(:index)
+  erb(:"members/index")
 end
 
 # NEW
-get '/members/new' do
-  erb(:new)
+get '/members/confirm-new-member' do
+  @member = Member.new(params)
+  erb(:"members/new")
 end
 
 # CREATE
-post '/members' do
+get '/members/new' do
+  erb(:"members/create")
+end
+
+post '/members/new' do
   @member = Member.new(params)
   @member.save
-  erb(:create)
+  redirect to('/members/confirm-new-member')
 end
 
 # EDIT
 get '/members/:id/edit' do
   @member = Member.find(params[:id].to_i)
-  erb(:edit)
+  erb(:"members/edit")
 end
 
 post '/members/:id/edit' do
@@ -36,7 +41,7 @@ end
 # DELETE
 get '/members/:id/delete' do
   @member = Member.find(params[:id].to_i)
-  erb(:delete)
+  erb(:"members/delete")
 end
 
 post '/members/:id/delete' do

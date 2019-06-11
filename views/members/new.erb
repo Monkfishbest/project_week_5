@@ -1,10 +1,4 @@
-<form action="/members/new" method="post">
-  <label for="first-name">First Name:</label>
-  <inpiut type="text" name="first_name" id="first-name">
-
-  <label for="last-name">Last Name</label>
-  <input type="text" name="last_name" id="last-name">
-
-<input type="submit" value="Create New Gym Member"
-</form>
-<!-- ~This Form allows us to add a new gym member~ -->
+<p>You have successfully created a new gym member.</p>
+<p>New member info</p>
+<p> First name <%= @member.first_name %></p>
+<p> Last name <%= @member.last_name %></p>
