@@ -16,6 +16,6 @@ when_class VARCHAR(255) NOT NULL
 
 CREATE TABLE booking_infos(
 id SERIAL8 PRIMARY KEY,
-exercise_class_id INT8 REFERENCES exercise_classes(id),
-member_id INT8 REFERENCES members(id)
+exercise_class_id INT8 REFERENCES exercise_classes(id) ON DELETE CASCADE,
+member_id INT8 REFERENCES members(id) ON DELETE CASCADE
 );
