@@ -1,6 +1,6 @@
 require( 'sinatra' )
 require( 'sinatra/contrib/all' )
-require_relative( '../models/members' )
+require_relative( '../models/exercise_class' )
 also_reload( '../models/*' )
 
 # INDEX
