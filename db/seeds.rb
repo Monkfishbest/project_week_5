@@ -4,9 +4,8 @@ require_relative('../models/booking_info')
 
 require('pry-byebug'
 )
-#
-# ExerciseClass.delete_all
-# Member.delete_all
+ExerciseClass.delete_all
+Member.delete_all
 
 
 member1 = Member.new({
@@ -49,7 +48,7 @@ booking_info2 = BookingInfo.new({
   'member_id' => member1.id
 })
 
-booking_info2.save  
+booking_info2.save
 
 binding.pry
 nil

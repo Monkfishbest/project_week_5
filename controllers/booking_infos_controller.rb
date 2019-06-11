@@ -1,0 +1,7 @@
+require( 'sinatra' )
+require( 'sinatra/contrib/all' )
+require( 'pry-byebug' )
+require_relative('../models/booking_info')
+require_relative('../models/exercise_class')
+require_relative('../models/members')
+also_reload('../models/*')

@@ -27,7 +27,7 @@ get '/classes/:id/edit' do
 end
 
 post '/classes/:id/edit' do
-  @class = Member.new(params)
+  @class = ExerciseClass.new(params)
   @class.update
   redirect to('/classes')
 end
