@@ -48,10 +48,12 @@ li a:hover{
 
 #ruby_content {
   font-family: Garamond;
+  list-style-type: none;
   text-decoration: : none;
-  width: 340kmpx;
+  color: rgb(249,166,2)
+  width: 340px;
   padding: 50px;
-  border: 20px rgba(94,60,88);
+  border: 20px rgb(94,60,88);
   margin: 50;
   background-color: rgba(94,60,88, 0.9);
 }
