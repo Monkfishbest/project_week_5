@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(222, 184, 135);
+  background-image: url("/pictures/scan0006_full.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Bookman';
+  padding: 5px;
+  margin: 5px;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto:
+}
+
+header {
+  background: #55d6aa;
+
+}
+
+#ruby_content {
+  border-left: 5px solid brown;
+  padding-left: 20px;
+}

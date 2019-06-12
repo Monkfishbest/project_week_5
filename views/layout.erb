@@ -3,8 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>John's Gym</title>
+  <link rel="stylesheet" type="text/css" href="/styles/structure.css">
+
+  <link rel="icon" href="/pictures/scan0006_full.jpeg">
+
 </head>
 <body>
+<header>
+  <div class="container">
+
+
   <nav>
     <main class="flex flex--row">
       <nav>
@@ -13,22 +21,26 @@
             <a href="/members">Members</a>
           </li>
           <li>
-            <a href="/members/new">Create new gym member</a>
+            <a href="/members/new">Create New Member</a>
           </li>
           <li>
-            <a href="/classes">classes</a>
+            <a href="/classes">List Classes</a>
           </li>
           <li>
-            <a href="/classes/new">Create a new class</a>
+            <a href="/classes/new">Create Class</a>
           </li>
           <li>
-            <a href="/booking-info/new">Create a booking</a>
+            <a href="/booking-info/new">Create a Booking</a>
           </li>
           <li>
-            <a href="/booking-info">See all current bookings</a>
+            <a href="/booking-info">See all Bookings</a>
           </li>
         </ul>
       </nav>
-        <%= yield %>
+</div>
+  </header>
+    <section id="ruby_content">
+      <%= yield %>
+      </section>
     </body>
     </html>
