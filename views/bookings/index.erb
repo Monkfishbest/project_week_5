@@ -2,13 +2,16 @@
 
 <ul>
   <% @bookings.each do |booking| %>
-  <li>
-    <p><%= booking.member.first_name %> <%= booking.member.last_name %> is booked on <%= booking.gym_class.class_name %> which is at <%= booking.gym_class.when_class %> </p>
-    <p>
-      <form  action="/booking-info/<%= booking.id %>/delete" method="post">
-        <input type="submit" value="Delete booking">
-      </form>
-    </p>
-  </li>
-  <% end %>
-</ul>
+  <div id="booking-list">
+    <li>
+      <p><%= booking.member.first_name %> <%= booking.member.last_name %> is booked on <%= booking.gym_class.class_name %> which is at <%= booking.gym_class.when_class %> </p>
+
+        <form  action="/booking-info/<%= booking.id %>/delete" method="post">
+          <input type="submit" value="Delete booking">
+        </form>
+        <hr>
+      
+    </li>
+    <% end %>
+  </ul>
+</div>

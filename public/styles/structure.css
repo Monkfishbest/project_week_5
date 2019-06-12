@@ -12,7 +12,7 @@ body {
 
 
 /* ~This will be the layout for the styling and layout of the navbar */
-ul {
+#nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -21,11 +21,11 @@ ul {
 }
 
 
-li {
+#nav li {
   float: left;
 }
 
-li a {
+#nav li a {
   display:block;
   color: white;
   text-align: center;
@@ -46,14 +46,17 @@ li a:hover{
   text-decoration: none;
 }
 
-#ruby_content {
+#main_content {
   font-family: Garamond;
-  list-style-type: none;
-  text-decoration: : none;
-  color: rgb(249,166,2)
-  width: 340px;
+  color: rgb(249,166,2);
   padding: 50px;
   border: 20px rgb(94,60,88);
   margin: 50;
   background-color: rgba(94,60,88, 0.9);
+}
+
+#main_content a{
+  list-style-type: none;
+  text-decoration: none;
+  color: pink;
 }
