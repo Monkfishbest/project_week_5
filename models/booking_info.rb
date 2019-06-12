@@ -11,7 +11,6 @@ class BookingInfo
   end
 
   # ~Thease methods allow for full C-R-U-D functionailty~
-
   # ~Instance Methods~
 
     def save()

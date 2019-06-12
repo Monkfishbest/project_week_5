@@ -11,7 +11,8 @@ last_name VARCHAR(255) NOT NULL
 CREATE TABLE exercise_classes(
 id SERIAL8 PRIMARY KEY,
 class_name VARCHAR(255) NOT NULL,
-when_class VARCHAR(255) NOT NULL
+date_class DATE NOT NULL,
+time_class TIME 
 );
 
 CREATE TABLE booking_infos(

@@ -4,13 +4,13 @@
   <% @bookings.each do |booking| %>
   <div id="booking-list">
     <li>
-      <p><%= booking.member.first_name %> <%= booking.member.last_name %> is booked on <%= booking.gym_class.class_name %> which is at <%= booking.gym_class.when_class %> </p>
+      <p><%= booking.member.first_name %> <%= booking.member.last_name %> is booked on <%= booking.gym_class.class_name %> at <%= booking.gym_class.time_class %> on the <%= booking.gym_class.date_class %> </p>
 
         <form  action="/booking-info/<%= booking.id %>/delete" method="post">
           <input type="submit" value="Delete booking">
         </form>
         <hr>
-      
+
     </li>
     <% end %>
   </ul>

@@ -24,14 +24,16 @@ member2.save
 
 exercise_class1 = ExerciseClass.new({
   'class_name' => 'Heavy lifting for single mothers',
-  'when_class' => '10/06/2019 at 10:00'
+  'time_class' => '10:00',
+  'date_class' => '19/06/2019'
 })
 
 exercise_class1.save
 
 exercise_class2 = ExerciseClass.new({
   'class_name' => 'Barbell training for toddlers',
-  'when_class' => '11/06/2019 at 11:00'
+  'date_class' => '19/06/2019'
+  'time_class' => '11:00'
 })
 
 exercise_class2.save
