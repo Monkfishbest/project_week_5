@@ -4,22 +4,54 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  font-family: 'Bookman';
+  font-family: Garamond;
+  list-style-type: none;
   padding: 5px;
   margin: 5px;
 }
 
-.container{
-  width: 80%;
-  margin: 0 auto:
+
+/* ~This will be the layout for the styling and layout of the navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-header {
-  background: #55d6aa;
 
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #111;
+}
+
+#home {
+  float: right;
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
 }
 
 #ruby_content {
-  border-left: 5px solid brown;
-  padding-left: 20px;
+  font-family: Garamond;
+  text-decoration: : none;
+  width: 340kmpx;
+  padding: 50px;
+  border: 20px rgba(94,60,88);
+  margin: 50;
+  background-color: rgba(94,60,88, 0.9);
 }
