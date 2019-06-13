@@ -12,7 +12,7 @@ CREATE TABLE exercise_classes(
 id SERIAL8 PRIMARY KEY,
 class_name VARCHAR(255) NOT NULL,
 date_class DATE NOT NULL,
-time_class TIME NUT NULL
+time_class TIME NOT NULL
 );
 
 CREATE TABLE booking_infos(
